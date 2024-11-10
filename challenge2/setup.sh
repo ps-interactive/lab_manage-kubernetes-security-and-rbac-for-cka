@@ -1,6 +1,10 @@
-# Create users and set password
-sudo useradd -m user1 && echo 'user1:12345' | sudo chpasswd
-sudo useradd -m user2 && echo 'user2:12345' | sudo chpasswd
+# Create users
+sudo useradd -m user1
+sudo useradd -m user2
+
+# Do not set any password for the users
+sudo passwd -l user1
+sudo passwd -l user2
 
 # Create .kube folders
 mkdir -p /home/user1/.kube
