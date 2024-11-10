@@ -5,6 +5,6 @@ metadata:
 spec:
  containers:
  - name: nginx
-   image: nginx
+   image: nginx:1.27.2-alpine-slim
    securityContext:
      runAsUser: 0

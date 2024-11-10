@@ -4,6 +4,6 @@ metadata:
  namespace: challenge2
  name: namespace-admin
 rules:
-- apiGroups: [""]
- resources: ["pods"]
- verbs: ["create", "delete", "get", "list", "update", "watch"]
+  - apiGroups: [""]
+    resources: ["pods"]
+    verbs: ["create", "delete", "get", "list", "update", "watch"]
