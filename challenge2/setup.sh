@@ -1,10 +1,10 @@
 # Create users
-sudo useradd -m user1
-sudo useradd -m user2
+useradd -m user1
+useradd -m user2
 
 # Do not set any password for the users
-sudo passwd -l user1
-sudo passwd -l user2
+passwd -l user1
+passwd -l user2
 
 # Create .kube folders
 mkdir -p /home/user1/.kube
@@ -31,6 +31,5 @@ mv /home/pslearner/resources/challenge2/kubeconfig-user1.yaml /home/user1/.kube/
 mv /home/pslearner/resources/challenge2/kubeconfig-user2.yaml /home/user2/.kube/config
 
 # Provide perms to users
-sudo chown user1:user1 /home/user1
-sudo chown user2:user2 /home/user2
-
+chown user1:user1 /home/user1
+chown user2:user2 /home/user2
