@@ -1,8 +1,8 @@
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:
- name: multi-namespace-admin
+ name: global-pod-reader
 rules:
 - apiGroups: [""]
  resources: ["pods"]
- verbs: ["create", "delete", "get", "list", "update", "watch"]
+ verbs: ["get", "list", "watch"]
