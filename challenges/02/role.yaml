@@ -1,8 +1,9 @@
+---
 apiVersion: rbac.authorization.k8s.io/v1
 kind: Role
 metadata:
- namespace: challenge2
- name: namespace-admin
+  namespace: challenge2
+  name: namespace-admin
 rules:
   - apiGroups: [""]
     resources: ["pods"]
