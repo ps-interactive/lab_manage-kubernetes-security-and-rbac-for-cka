@@ -4,5 +4,5 @@ metadata:
  name: global-pod-reader
 rules:
 - apiGroups: [""]
- resources: ["pods"]
- verbs: ["get", "list", "watch"]
+  resources: ["pods"]
+  verbs: ["get", "list", "watch"]
