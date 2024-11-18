@@ -31,5 +31,5 @@ mv /home/pslearner/challenges/02/kubeconfig-user1.yaml /home/user1/.kube/config
 mv /home/pslearner/challenges/02/kubeconfig-user2.yaml /home/user2/.kube/config
 
 # Provide perms to users
-chown user1:user1 /home/user1
-chown user2:user2 /home/user2
+chown -R user1:user1 /home/user1
+chown -R user2:user2 /home/user2
