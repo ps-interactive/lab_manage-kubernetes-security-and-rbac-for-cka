@@ -8,7 +8,7 @@ passwd -l user2
 
 # Create .kube folders
 mkdir -p /home/user1/.kube
-mkdir -p /home/user1/.kube
+mkdir -p /home/user2/.kube
 
 # Generate private key for users
 openssl genrsa -out /home/user1/.kube/user1.key 2048
@@ -27,8 +27,8 @@ cp /home/pslearner/.minikube/ca.crt /home/user1/.kube/ca.crt
 cp /home/pslearner/.minikube/ca.crt /home/user2/.kube/ca.crt
 
 # Move kubeconfig files to users dirs
-mv /home/pslearner/resources/challenge2/kubeconfig-user1.yaml /home/user1/.kube/config
-mv /home/pslearner/resources/challenge2/kubeconfig-user2.yaml /home/user2/.kube/config
+mv /home/pslearner/challenges/02/kubeconfig-user1.yaml /home/user1/.kube/config
+mv /home/pslearner/challenges/02/kubeconfig-user2.yaml /home/user2/.kube/config
 
 # Provide perms to users
 chown user1:user1 /home/user1
