@@ -2,22 +2,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
- name: mysql
+ name: postgres
 spec:
  selector:
    matchLabels:
-     app: mysql
+     app: postgres
  template:
    metadata:
      labels:
-       app: mysql
+       app: postgres
    spec:
      containers:
-     - name: mysql
-       image: mysql:9.1.0
+     - name: postgres
+       image: postgres:15.2-alpine
        env:
-       - name: MYSQL_ROOT_PASSWORD
+       - name: POSTGRES_PASSWORD
          valueFrom:
            secretKeyRef:
-             name: mysql-pass
+             name: db-pass
              key: password
