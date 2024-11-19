@@ -5,7 +5,8 @@ metadata:
  name: non-compliant-pod
 spec:
  containers:
- - name: nginx
-   image: nginx:1.27.2-alpine-slim
+ - name: busybox
+   image: busybox:1.37
+   command: ["sleep", "3600"]
    securityContext:
      runAsUser: 0
