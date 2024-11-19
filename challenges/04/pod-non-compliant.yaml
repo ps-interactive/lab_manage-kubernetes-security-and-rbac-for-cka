@@ -5,7 +5,7 @@ metadata:
  name: non-compliant-pod
 spec:
  containers:
- - name: postgres
-   image: postgres:15.2-alpine
+ - name: nginx
+   image: nginx:1.27.2-alpine-slim
    securityContext:
      runAsUser: 0
